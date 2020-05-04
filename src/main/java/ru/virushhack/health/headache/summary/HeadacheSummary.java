@@ -48,7 +48,7 @@ public class HeadacheSummary extends Summary {
                 if (mostImportantDescription.priority <= cause.getSummaryDescription().priority) {
                     super.description = cause.getSummaryDescription().description;
                 }
-                causes.add(cause);
+                possibleCauses.add(cause);
             } else if (selectionOverlap.get() >= LESS_LIKELY_OVERLAP) {
                 lessLikelyCauses.add(cause);
             }
