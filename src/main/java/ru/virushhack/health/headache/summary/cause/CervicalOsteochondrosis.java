@@ -1,5 +1,6 @@
 package ru.virushhack.health.headache.summary.cause;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import ru.virushhack.health.headache.step.*;
 import ru.virushhack.health.headache.summary.SummaryDescription;
 import ru.virushhack.health.selection.StandardSelection;
@@ -36,11 +37,16 @@ public class CervicalOsteochondrosis extends PossibleCause {
 
 
     public CervicalOsteochondrosis() {
-        super(NAME, DESCRIPTION.shortName, STATISTICS, StepSelections);
+        super(NAME, DESCRIPTION.shortName, STATISTICS);
     }
 
     @Override
     public SummaryDescription getSummaryDescription() {
         return DESCRIPTION;
+    }
+
+    @Override
+    public Map<String, String> getStepSelections() {
+        return StepSelections;
     }
 }

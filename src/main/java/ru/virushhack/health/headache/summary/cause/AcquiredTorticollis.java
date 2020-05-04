@@ -37,11 +37,16 @@ public class AcquiredTorticollis extends PossibleCause {
 
 
     public AcquiredTorticollis() {
-        super(NAME, DESCRIPTION.shortName, STATISTICS, StepSelections);
+        super(NAME, DESCRIPTION.shortName, STATISTICS);
     }
 
     @Override
     public SummaryDescription getSummaryDescription() {
         return DESCRIPTION;
+    }
+
+    @Override
+    public Map<String, String> getStepSelections() {
+        return StepSelections;
     }
 }

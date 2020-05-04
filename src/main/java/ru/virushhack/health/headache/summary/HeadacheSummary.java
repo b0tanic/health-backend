@@ -42,7 +42,7 @@ public class HeadacheSummary extends Summary {
         lessLikelyCauses = new ArrayList<>();
 
         causes.forEach(cause -> {
-            AtomicInteger selectionOverlap = compareStepSelections(selections, cause.stepSelections);
+            AtomicInteger selectionOverlap = compareStepSelections(selections, cause.getStepSelections());
 
             if (selectionOverlap.get() >= POSSIBLE_OVERLAP) {
                 if (mostImportantDescription.priority <= cause.getSummaryDescription().priority) {

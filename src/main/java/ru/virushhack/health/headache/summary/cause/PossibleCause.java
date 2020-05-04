@@ -1,5 +1,6 @@
 package ru.virushhack.health.headache.summary.cause;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import ru.virushhack.health.headache.summary.SummaryDescription;
 
 import java.util.Map;
@@ -15,16 +16,17 @@ public abstract class PossibleCause {
     public final String name;
     public final String advice;
     public final String statistics;
-    public final Map<String, String> stepSelections;
 
 
-    public PossibleCause(String name, String advice, String statistics, Map<String, String> stepSelections) {
+    public PossibleCause(String name, String advice, String statistics) {
         this.name = name;
         this.advice = advice;
         this.statistics = statistics;
-        this.stepSelections = stepSelections;
     }
 
-
+    @JsonIgnore
     public abstract SummaryDescription getSummaryDescription();
+
+    @JsonIgnore
+    public abstract Map<String, String> getStepSelections();
 }

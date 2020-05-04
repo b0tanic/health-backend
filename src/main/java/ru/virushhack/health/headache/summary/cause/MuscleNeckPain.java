@@ -1,6 +1,9 @@
 package ru.virushhack.health.headache.summary.cause;
 
-import ru.virushhack.health.headache.step.*;
+import ru.virushhack.health.headache.step.Step13;
+import ru.virushhack.health.headache.step.Step25;
+import ru.virushhack.health.headache.step.Step27;
+import ru.virushhack.health.headache.step.Step28;
 import ru.virushhack.health.headache.summary.SummaryDescription;
 import ru.virushhack.health.selection.StandardSelection;
 import ru.virushhack.health.selection.SymptomChangeSelection;
@@ -34,11 +37,16 @@ public class MuscleNeckPain extends PossibleCause {
 
 
     public MuscleNeckPain() {
-        super(NAME, DESCRIPTION.shortName, STATISTICS, StepSelections);
+        super(NAME, DESCRIPTION.shortName, STATISTICS);
     }
 
     @Override
     public SummaryDescription getSummaryDescription() {
         return DESCRIPTION;
+    }
+
+    @Override
+    public Map<String, String> getStepSelections() {
+        return StepSelections;
     }
 }
