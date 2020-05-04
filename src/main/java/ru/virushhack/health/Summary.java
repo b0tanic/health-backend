@@ -1,5 +1,7 @@
 package ru.virushhack.health;
 
+import ru.virushhack.health.headache.summary.cause.PossibleCause;
+
 import java.util.List;
 import java.util.Map;
 
@@ -12,17 +14,8 @@ import java.util.Map;
 public abstract class Summary {
 
     public String description;
-    public List<String> possibleCauses;
-    public List<String> present;
-    public List<String> absent;
-
-
-    protected Summary(String description, List<String> possibleCauses, List<String> present, List<String> absent) {
-        this.description = description;
-        this.possibleCauses = possibleCauses;
-        this.present = present;
-        this.absent = absent;
-    }
+    public List<PossibleCause> possibleCauses;
+    public List<PossibleCause> lessLikelyCauses;
 
 
     /**

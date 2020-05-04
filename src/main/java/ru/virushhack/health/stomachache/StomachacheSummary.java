@@ -2,7 +2,6 @@ package ru.virushhack.health.stomachache;
 
 import ru.virushhack.health.Summary;
 
-import java.util.ArrayList;
 import java.util.Map;
 
 /**
@@ -12,11 +11,6 @@ import java.util.Map;
  * @since 04.05.2020
  */
 public class StomachacheSummary extends Summary {
-
-
-    public StomachacheSummary() {
-        super("", new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
-    }
 
     @Override
     public Summary determine(Map<String, String> selections) {

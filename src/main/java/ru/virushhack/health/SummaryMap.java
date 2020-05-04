@@ -1,6 +1,6 @@
 package ru.virushhack.health;
 
-import ru.virushhack.health.headache.HeadacheSummary;
+import ru.virushhack.health.headache.summary.HeadacheSummary;
 import ru.virushhack.health.selection.GeneralReason;
 import ru.virushhack.health.stomachache.StomachacheSummary;
 

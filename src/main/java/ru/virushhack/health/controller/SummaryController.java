@@ -3,8 +3,7 @@ package ru.virushhack.health.controller;
 import org.springframework.web.bind.annotation.*;
 import ru.virushhack.health.Summary;
 import ru.virushhack.health.SummaryMap;
-
-import java.util.Map;
+import ru.virushhack.health.SummaryRequest;
 
 /**
  * Контроллер для определения диагноза.
@@ -17,11 +16,8 @@ import java.util.Map;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class SummaryController {
 
-    @GetMapping
-    public Summary determineSummary(
-            @RequestParam String reason,
-            @RequestParam Map<String, String> selections) {
-
-        return SummaryMap.getSummary(reason).determine(selections);
+    @PostMapping
+    public Summary determineSummary(@RequestBody SummaryRequest summaryRequest) {
+        return SummaryMap.getSummary(summaryRequest.reason).determine(summaryRequest.selections);
     }
 }
