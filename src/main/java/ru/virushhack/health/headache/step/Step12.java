@@ -15,6 +15,6 @@ public class Step12 extends BaseStep {
     public static final String QUESTION = "Вы чувствуете себя истощенным? (например после сна, как будто не отдохнули   )";
 
     public Step12() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Чувство истощения", StandardSelection.values, false);
     }
 }

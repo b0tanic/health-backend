@@ -15,6 +15,6 @@ public class Step1 extends BaseStep {
     public static final String QUESTION = "Как долго это Вас беспокоит?";
 
     public Step1() {
-        super(ID, QUESTION, PeriodSelection.values, false);
+        super(ID, QUESTION, "Долго беспокоит", PeriodSelection.values, false);
     }
 }

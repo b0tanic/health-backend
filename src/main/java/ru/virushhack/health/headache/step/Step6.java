@@ -15,6 +15,6 @@ public class Step6 extends BaseStep {
     public static final String QUESTION = "Была ли боль в глазах от яркого света?";
 
     public Step6() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Боль в глазах от яркого света", StandardSelection.values, false);
     }
 }

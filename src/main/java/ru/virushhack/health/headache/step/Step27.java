@@ -16,6 +16,6 @@ public class Step27 extends BaseStep {
     public static final String QUESTION = "Ваша голова и шея большую часть времени наклонены? Например, вперед при работе за ноутбуком";
 
     public Step27() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Постоянно наклонены шея/голова", StandardSelection.values, false);
     }
 }

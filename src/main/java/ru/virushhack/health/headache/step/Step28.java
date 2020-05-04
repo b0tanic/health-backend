@@ -16,6 +16,6 @@ public class Step28 extends BaseStep {
     public static final String QUESTION = "Отлично, последний вопрос. Как Ваши симптомы менялись с течением времени?";
 
     public Step28() {
-        super(ID, QUESTION, SymptomChangeSelection.values, true);
+        super(ID, QUESTION, "Симптомы не менялись", SymptomChangeSelection.values, true);
     }
 }

@@ -15,6 +15,6 @@ public class Step7 extends BaseStep {
     public static final String QUESTION = "Твоя челюсть напряжена так, что это слегка затрудняет ее открытие или вызывает напряжение?";
 
     public Step7() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Напряжена челюсть", StandardSelection.values, false);
     }
 }

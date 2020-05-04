@@ -15,6 +15,6 @@ public class Step2 extends BaseStep {
     public static final String QUESTION = "Головная боль в основном на одной или двух сторонах головы?";
 
     public Step2() {
-        super(ID, QUESTION, SideSelection.values, false);
+        super(ID, QUESTION, "Головная боль с одной стороны", SideSelection.values, false);
     }
 }

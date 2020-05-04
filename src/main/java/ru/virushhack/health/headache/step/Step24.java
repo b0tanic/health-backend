@@ -16,6 +16,6 @@ public class Step24 extends BaseStep {
     public static final String QUESTION = "Вы чувствуете тошноту?";
 
     public Step24() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Тошнота", StandardSelection.values, false);
     }
 }

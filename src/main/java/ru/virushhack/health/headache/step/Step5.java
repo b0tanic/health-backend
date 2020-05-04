@@ -15,6 +15,6 @@ public class Step5 extends BaseStep {
     public static final String QUESTION = "Твой висок болит, если коснуться его?";
 
     public Step5() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Боль в виске при прикосновении", StandardSelection.values, false);
     }
 }

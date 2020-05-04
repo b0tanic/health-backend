@@ -15,6 +15,6 @@ public class Step15 extends BaseStep {
     public static final String QUESTION = "У Вас есть затруднения (боль) во вращении или наклонах шеи/головы?";
 
     public Step15() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Затруднены наклоны головы/шеи", StandardSelection.values, false);
     }
 }

@@ -16,13 +16,16 @@ public abstract class BaseStep {
 
     public final String question;
 
+    public final String shortName;
+
     public final List<IdName> buttons;
 
     public final Boolean isFinal;
 
-    protected BaseStep(String nextState, String question, List<IdName> buttons, Boolean isFinal) {
+    protected BaseStep(String nextState, String question, String shortName, List<IdName> buttons, Boolean isFinal) {
         this.nextState = nextState;
         this.question = question;
+        this.shortName = shortName;
         this.buttons = buttons;
         this.isFinal = isFinal;
     }

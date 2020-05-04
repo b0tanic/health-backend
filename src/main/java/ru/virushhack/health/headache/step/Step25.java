@@ -16,6 +16,6 @@ public class Step25 extends BaseStep {
     public static final String QUESTION = "У Вас есть покалывание или онемение в руках?";
 
     public Step25() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Покалывание/онемение в руках", StandardSelection.values, false);
     }
 }

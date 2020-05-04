@@ -15,6 +15,6 @@ public class Step3 extends BaseStep {
     public static final String QUESTION = "Как меняется боль, если Вы наклоняетесь вперед?";
 
     public Step3() {
-        super(ID, QUESTION, EffectSelection.values, false);
+        super(ID, QUESTION, "Боль при наклонении", EffectSelection.values, false);
     }
 }

@@ -15,6 +15,6 @@ public class Step10 extends BaseStep {
     public static final String QUESTION = "У Вас есть насморк?";
 
     public Step10() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Насморк", StandardSelection.values, false);
     }
 }

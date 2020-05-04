@@ -16,6 +16,6 @@ public class Step19 extends BaseStep {
     public static final String QUESTION = "У Вас есть боль в руках, ладонях или пальцах? В любом из этих мест";
 
     public Step19() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Болят руки/ладони/пальцы", StandardSelection.values, false);
     }
 }

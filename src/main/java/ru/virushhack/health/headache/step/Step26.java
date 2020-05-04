@@ -16,6 +16,6 @@ public class Step26 extends BaseStep {
     public static final String QUESTION = "Это покалывание или онемение на одной стороне или двух?";
 
     public Step26() {
-        super(ID, QUESTION, TingleSideSelection.values, false);
+        super(ID, QUESTION, "Покалывание/онемение на одной стороне", TingleSideSelection.values, false);
     }
 }

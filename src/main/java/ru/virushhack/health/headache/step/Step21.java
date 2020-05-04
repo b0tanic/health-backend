@@ -16,6 +16,6 @@ public class Step21 extends BaseStep {
     public static final String QUESTION = "У Вас есть боль в месте соединения верхней и нижней челюсти?";
 
     public Step21() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Боль между верхней и нижней челюстью", StandardSelection.values, false);
     }
 }

@@ -15,6 +15,6 @@ public class Step4 extends BaseStep {
     public static final String QUESTION = "Опиши остроту своей боли";
 
     public Step4() {
-        super(ID, QUESTION, PainSelection.values, false);
+        super(ID, QUESTION, "Острая боль", PainSelection.values, false);
     }
 }

@@ -16,6 +16,6 @@ public class Step22 extends BaseStep {
     public static final String QUESTION = "У Вас были травмы шеи или головы до обнаружения первых симптомов?";
 
     public Step22() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Травмы шеи/головы", StandardSelection.values, false);
     }
 }

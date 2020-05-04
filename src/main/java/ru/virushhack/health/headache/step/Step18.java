@@ -15,6 +15,6 @@ public class Step18 extends BaseStep {
     public static final String QUESTION = "У Вас есть болезненные ощущения при прикосновении к любой части лица?";
 
     public Step18() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Боль при прикосновении к лицу", StandardSelection.values, false);
     }
 }

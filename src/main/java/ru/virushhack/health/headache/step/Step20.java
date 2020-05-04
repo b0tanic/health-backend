@@ -16,6 +16,6 @@ public class Step20 extends BaseStep {
     public static final String QUESTION = "У Вас была половая близость без использования средств контрацепции за последние 3 месяца?";
 
     public Step20() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Половая близость без контрацепции", StandardSelection.values, false);
     }
 }

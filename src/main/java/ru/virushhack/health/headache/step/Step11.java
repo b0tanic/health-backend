@@ -15,6 +15,6 @@ public class Step11 extends BaseStep {
     public static final String QUESTION = "Твое давление обычно (в настоящий момент) выше 140/90 ?";
 
     public Step11() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Высокое давление", StandardSelection.values, false);
     }
 }

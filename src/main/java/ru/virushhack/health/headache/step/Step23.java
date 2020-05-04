@@ -16,6 +16,6 @@ public class Step23 extends BaseStep {
     public static final String QUESTION = "У Вас повышенная температура тела? (выше 38)";
 
     public Step23() {
-        super(ID, QUESTION, StandardSelection.values, false);
+        super(ID, QUESTION, "Повышенная температура", StandardSelection.values, false);
     }
 }
