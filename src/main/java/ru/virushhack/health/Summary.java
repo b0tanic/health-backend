@@ -11,10 +11,10 @@ import java.util.Map;
  */
 public abstract class Summary {
 
-    public final String description;
-    public final List<String> possibleCauses;
-    public final List<String> present;
-    public final List<String> absent;
+    public String description;
+    public List<String> possibleCauses;
+    public List<String> present;
+    public List<String> absent;
 
 
     protected Summary(String description, List<String> possibleCauses, List<String> present, List<String> absent) {

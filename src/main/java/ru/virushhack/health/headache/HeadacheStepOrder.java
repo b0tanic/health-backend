@@ -1,6 +1,7 @@
 package ru.virushhack.health.headache;
 
 import ru.virushhack.health.StepOrder;
+import ru.virushhack.health.headache.step.*;
 
 import java.util.HashMap;
 import java.util.Map;

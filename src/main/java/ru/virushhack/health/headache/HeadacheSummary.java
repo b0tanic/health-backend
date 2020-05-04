@@ -13,9 +13,10 @@ import java.util.Map;
  */
 public class HeadacheSummary extends Summary {
 
+    public static final String DESCRIPTION = "Людям с подобными симптомами не требуется срочная медицинская помощь.";
 
     public HeadacheSummary() {
-        super("", new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+        super(DESCRIPTION, new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
     }
 
     @Override

@@ -29,6 +29,6 @@ public class DetailReasonMap {
     }
 
     public static List<IdNameDescription> getDetailReason(String reason) {
-        return detailReasonMap.get(GeneralReason.valueOf(reason));
+        return getDetailReason(GeneralReason.valueOf(reason));
     }
 }

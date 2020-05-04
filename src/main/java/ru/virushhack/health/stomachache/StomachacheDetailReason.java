@@ -1,6 +1,5 @@
 package ru.virushhack.health.stomachache;
 
-import ru.virushhack.health.headache.HeadacheDetailReason;
 import ru.virushhack.health.selection.IdNameDescription;
 
 import java.util.ArrayList;
@@ -14,7 +13,12 @@ import java.util.List;
  */
 public enum StomachacheDetailReason {
 
-    FIRST ("", "", "");
+    STOMACHACHE ("STOMACHACHE", "Боль в животе", "Описание варианта симптома"),
+
+    FAST_SATURATION ("FAST_SATURATION", "Быстрое насыщение", "Описание варианта симптома"),
+
+    INDIGESTION ("INDIGESTION", "Несварение желудка", "Описание варианта симптома");
+
 
     public static final List<IdNameDescription> values;
     static {
