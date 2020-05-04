@@ -12,7 +12,7 @@ import java.util.List;
  */
 public abstract class BaseStep {
 
-    public final String state;
+    public final String nextState;
 
     public final String question;
 
@@ -20,8 +20,8 @@ public abstract class BaseStep {
 
     public final Boolean isFinal;
 
-    protected BaseStep(String state, String question, List<IdName> buttons, Boolean isFinal) {
-        this.state = state;
+    protected BaseStep(String nextState, String question, List<IdName> buttons, Boolean isFinal) {
+        this.nextState = nextState;
         this.question = question;
         this.buttons = buttons;
         this.isFinal = isFinal;

@@ -1,15 +1,17 @@
 package ru.virushhack.health.headache;
 
+import ru.virushhack.health.StepOrder;
+
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Порядок следования слайдов.
+ * Порядок следования слайдов при головной боли.
  *
  * @author Arsen Avalyan
  * @since 03.05.2020
  */
-public class StepOrder {
+public class HeadacheStepOrder implements StepOrder {
 
     protected static final Map<String, BaseStep> orderMap = new HashMap<>();
 
@@ -45,11 +47,11 @@ public class StepOrder {
     }
 
 
-    public static BaseStep nextStep(BaseStep current) {
-        return orderMap.get(current.state);
+    public BaseStep nextStep(BaseStep current) {
+        return nextStep(current.nextState);
     }
 
-    public static BaseStep nextStep(String currentStepId) {
+    public BaseStep nextStep(String currentStepId) {
         return orderMap.get(currentStepId);
     }
 }

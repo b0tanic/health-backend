@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import ru.virushhack.health.headache.BaseStep;
-import ru.virushhack.health.headache.StepOrder;
 
 /**
  * Контроллер для переход между слайдами.
@@ -19,10 +18,10 @@ public class StepController {
 
     @GetMapping (value = "/next")
     public BaseStep nextStep(
-            @RequestParam String state,
+            @RequestParam (required = false) String state,
             @RequestParam String reason,
-            @RequestParam String select) {
+            @RequestParam (required = false) String select) {
 
-        return StepOrder.nextStep(state);
+        return StepOrderMap.stepOrder(reason).nextStep(state);
     }
 }

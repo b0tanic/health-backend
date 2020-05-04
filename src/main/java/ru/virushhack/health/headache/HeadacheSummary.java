@@ -14,7 +14,7 @@ import java.util.Map;
 public class HeadacheSummary extends Summary {
 
 
-    protected HeadacheSummary() {
+    public HeadacheSummary() {
         super("", new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
     }
 
